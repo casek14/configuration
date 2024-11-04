@@ -37,6 +37,11 @@ endif
 " Required:
 call plug#begin(expand('~/.vim/plugged'))
 
+" Syntax highlight
+" Default highlight is better than polyglot
+let g:polyglot_disabled = ['python']
+let python_highlight_all = 1
+
 "*****************************************************************************
 "" Plug install packages
 "*****************************************************************************
@@ -186,7 +191,7 @@ else
 
   " IndentLine
   let g:indentLine_enabled = 1
-  let g:indentLine_concealcursor = 0
+  let g:indentLine_concealcursor = 'inc'
   let g:indentLine_char = '┆'
   let g:indentLine_faster = 1
 
@@ -553,13 +558,6 @@ let g:jedi#smart_auto_mappings = 0
 
 " vim-airline
 let g:airline#extensions#virtualenv#enabled = 1
-
-" Syntax highlight
-" Default highlight is better than polyglot
-let g:polyglot_disabled = ['python']
-let python_highlight_all = 1
-
-
 
 "*****************************************************************************
 "*****************************************************************************

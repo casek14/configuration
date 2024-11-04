@@ -114,3 +114,6 @@ export PATH=$PATH:/usr/local/go/bin:/home/$USER/go/bin
 alias k="kubectl"
 export GOPATH=/home/$USER/go
 export GOROOT=/usr/local/go
+
+# To customize prompt, run `p10k configure` or edit ~/repos/github.com/casek14/configuration/.p10k.zsh.
+[[ ! -f ~/repos/github.com/casek14/configuration/.p10k.zsh ]] || source ~/repos/github.com/casek14/configuration/.p10k.zsh
